@@ -22,8 +22,6 @@ Limit 5
 
 SELECT  COUNT(*) FROM retail_sales 
 
-
-
 -- Check for null values in the dataset 
 SELECT * FROM retail_sales
 WHERE 
@@ -69,6 +67,7 @@ WHERE
 
 -- Exploring our dataset, we find that we have 155 unique customers
 SELECT COUNT(DISTINCT(customer_id)) FROM retail_sales; 
+
 -- we also know that we have 3 main categories,'Electronics, Clothing, and Beauty'
 SELECT DISTINCT(category) FROM retail_sales;
 
